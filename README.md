@@ -9,7 +9,7 @@ neste conjunto a máxima soma.
 <p>Exemplo: </p>
 <img src=img/img1.png>
 <p>Observe nesse exemplo em que a máxima soma seria 13 e as posições para isso seriam de 0 até 2, saltando apenas a última.</p>
-<p>Notem que esse problema só é interessante para listas que possuem tanto números negativos, quanto positivos. Nesse sentido, para uma lista completamente positiva basta somar todos os seus elementos para se obter o segmento de soma máxima. Entretanto, se tratanto das listas inteiramente negativas, é importante ressaltar o algoritimo apresentado nesse repositório as desconsideram, pois se for encontrado somente valores negativos é mais correto enunciar que o segmento máximo é zero.</p>
+<p>Notem que esse problema só é interessante para listas que possuem tanto números negativos, quanto positivos. Nesse sentido, para uma lista completamente positiva basta somar todos os seus elementos para se obter o segmento de soma máxima. Entretanto, se tratanto das listas inteiramente negativas, é importante ressaltar que o algoritimo apresentado nesse repositório as desconsideram, pois se for encontrado somente valores negativos é mais correto enunciar que o segmento máximo é zero.</p>
 
 <h3>Processamento</h3>
 <p>Durante o deselvovimento do algoritimo apresentado nesse repositório, foi-se utilizado de três principais plataformas: i) Dev C++, ii) Visual Studio Code e iii) WSL:Ubunto</p>
