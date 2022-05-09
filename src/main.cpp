@@ -22,7 +22,7 @@ int main() {
 	ifstream inFile(file.c_str());
 	
 	if(!inFile){
-		cerr << "\nERRO...ERRO...N�o foi poss�vel abrir o arquivo...ERRO...ERRO\n\nSaindo...\n";
+		cerr << "\nERRO...ERRO...Não foi possível abrir o arquivo...ERRO...ERRO\n\nSaindo...\n";
 		return -1;
 	}
 
