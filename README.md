@@ -69,7 +69,17 @@ do{
 	<li>
 		<p>O WSL é um método para se executar o Sistema Operaciona Linux dentro do Windows de forma muito facil. Essa platoforma se torna essencial para o desenvovimento em ambiente GNU Linux, evitando tarefas como a intalação de maquinas vituais, criação de dual booting no computador pessoal e entre outras coisas. Além disso, existem diversas vantagens como rodar programas em conjunto e compartihamento de localhost. Segue em anexo um  tutorial de download do WSL2 — <a href="https://youtu.be/hd6lxt5iVsg" target="_blank">Tutorial WSL2</a>.</p>
 	</li>
-</ol>
+</ol><p>Ademais, para que o processamento do algoritimo seja feito, é necessário que o usuáro entre com os valores em um arquivo, inserindo o nome do arquivo onde a lista se encontra; é recomendável utilizar aquivos com a extenção txt, ou seja, arquivos de texto que não contém formatação. Nesse contexto, é fundamental que o documento siga um padrão estabelecido com o intuito de não comprometer sua leitura. </p>
+	<p>Portanto, para posicionar os dados no arquivo, o usuário deve considerar cada linha como um elemento da lista. Assim sendo, é aconselável separar os  elementos e inserir somente um por linha. Supondo o desejo de armazenar uma lista que possua [13, -4, -7, 12 ,11 e 3] o usuário deve arquivar o seguinte texto:</p>
+<p><pre>
+13
+-4
+-7
+12
+11
+3
+</pre></p>
+<p>Segue anexado junto ao repositório arquivos com extenção em txt como exemplos de entradas teste.</p>
 <hr>
 <div style="margin: 30px 30px 30px 30px;"><p>Tecnologia: C++</p></div>
 <div style="margin: 30px 30px 30px 30px; font-size: 30px;"><p><b>Feito por Luan Gonçalves Santos</p><b></div>
