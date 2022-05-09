@@ -18,31 +18,32 @@ neste conjunto a máxima soma.
 	<code>
 		<pre>
 do{
-	if(soma >=0){
+	if(soma >=0){		<b>(I)</b>
 		soma += auxFinal->getValue();
 	}
-	else{
+	else{		<b>(II)</b>
 		soma = auxFinal->getValue();
 		start = final;
 	}
 
-	if(soma > this->segmentMax.getSoma()){
+	if(soma > this->segmentMax.getSoma()){		<b>(III)</b>
 		this->segmentMax.setSoma(soma);
 		this->segmentMax.setStart(start);
 		this->segmentMax.setFinal(final);
 	}
-	else if(soma < 0){
+	else if(soma < 0){		<b>(IV)</b>
 		this->segmentMax.setSoma(0);
 		this->segmentMax.setStart(-1);
 		this->segmentMax.setFinal(-1);		
 	}
 
-	auxFinal = auxFinal->getProx();
+	auxFinal = auxFinal->getProx();		(V)
 	final++;
 }while(auxFinal != NULL);
 		</pre>
 	</code>
 </div><br>
+<p></p>
 <h3>Processamento</h3>
 <p>Durante o deselvovimento do algoritimo apresentado nesse repositório, foi-se utilizado de três principais plataformas: i) Dev C++, ii) Visual Studio Code e iii) WSL:Ubunto</p>
 
