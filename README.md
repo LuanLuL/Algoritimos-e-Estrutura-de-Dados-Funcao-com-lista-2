@@ -52,7 +52,7 @@ do{
 		<p>Porém, caso o valor do segmento anterior não contribua com a soma máxima, ou seja, caso o ultimo segmento possua uma soma de valores resultante negativa, a soma anterior não é incorporada e sim alterada para o valor do elemento atual. Nessa caso, como o seguimento anterior foi descartado, é preciso modificar o indexStart para seu novo índice de início.</p>
 	</li>
 	<li>
-		<p>Assim sendo, após comparar os seguimentos é necessario atualizar o seguimento indicando os indíces de começo (variáveç start) e final (variável final) e a nova soma máxima obtida na repetição. Vale destacar novamente que se nenhum valor positivo for encontrado o algoritimo considera a soma como zero e indica parametros de inicio e fim do segmento com o índice de um negativo, isto significa um segmento vazio.</p>
+		<p>Assim sendo, após comparar os seguimentos é necessario atualizar o seguimento indicando os indíces de começo (variável start) e final (variável final) e a nova soma máxima obtida na repetição. Vale destacar novamente que se nenhum valor positivo for encontrado o algoritimo considera a soma como zero e indica parametros de inicio e fim do segmento com o índice de um negativo, isto significa um segmento vazio.</p>
 	</li>
 </ol>
 <h3>Processamento</h3>
