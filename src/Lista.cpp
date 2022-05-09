@@ -57,11 +57,15 @@ void Lista::getMaxSegment(){
 	Item* aux = this->primeiro;
 	int i = 0;
 	
-	cout << "\nA m√°xima soma encontrada foi: [ ";
+	cout << "\nA m·xima soma encontrada foi: [ ";
 	
 	do{
 		if(i >= this->segmentMax.getStart()){
-			if(i == this->segmentMax.getFinal()){
+			if(this->segmentMax.getSoma() == 0){
+				cout << "ÿ ] = " << this->segmentMax.getSoma();
+				i = this->segmentMax.getFinal();
+			}
+			else if(i == this->segmentMax.getFinal()){
 				cout << aux->getValue() << " ] = " << this->segmentMax.getSoma();
 			}
 			else{
@@ -70,7 +74,7 @@ void Lista::getMaxSegment(){
 		}
 		
 		i++;
-		aux = aux->getProx();	
+		aux = aux->getProx();
 	}while(i <= this->segmentMax.getFinal());
 	
 	cout << "\n\n------------------------------------------\n";
@@ -105,7 +109,7 @@ void Lista::insertFinal(int value){
 	Item* newItem = new Item(value);
 	
 	if(getSize() >= this->maxSize){
-		cout << "\n\nERRO...ERRO...A lista " << this->name << " est√° cheia...ERRO...ERRO\n\n";
+		cout << "\n\nERRO...ERRO...A lista " << this->name << " est· cheia...ERRO...ERRO\n\n";
 	}
 	else{
 		if(checkEmpty()){
@@ -121,7 +125,7 @@ void Lista::insertFinal(int value){
 
 void Lista::printList(){
 	if(checkEmpty()){
-		cout << "\nA lista " << this->name << " estÔøΩ vazia.";
+		cout << "\nA lista " << this->name << " est· vazia.";
 	}
 	else{
 		Item* aux = this->primeiro;
@@ -164,6 +168,10 @@ void Lista::searchMaximumSum(){
     int start = 0, final = 0, soma=0;
 	Item* auxFinal = this->primeiro;
 	
+	this->segmentMax.setStart(0);
+	this->segmentMax.setFinal(0);
+	this->segmentMax.setSoma(0);
+	
 	do{
 		if(soma >=0){
 			soma += auxFinal->getValue();
@@ -178,9 +186,15 @@ void Lista::searchMaximumSum(){
 			this->segmentMax.setStart(start);
 			this->segmentMax.setFinal(final);
 		}
-		
+		else if(soma < 0){
+			this->segmentMax.setSoma(0);
+			this->segmentMax.setStart(-1);
+			this->segmentMax.setFinal(-1);		
+		}
+
 		auxFinal = auxFinal->getProx();
 		final++;
 	}while(auxFinal != NULL);
-	cout << "\n----->Soma m√°xima calculada!\n\n------------------------------------------\n";
+	
+	cout << "\n----->Soma m·xima calculada!\n\n------------------------------------------\n";
 }
