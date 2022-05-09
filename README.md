@@ -55,6 +55,7 @@ do{
 		<p>Assim sendo, após comparar os seguimentos é necessario atualizar o seguimento indicando os indíces de começo (variável start) e final (variável final) e a nova soma máxima obtida na repetição. Vale destacar novamente que se nenhum valor positivo for encontrado o algoritimo considera a soma como zero e indica parametros de inicio e fim do segmento com o índice de um negativo, isto significa um segmento vazio.</p>
 	</li>
 </ol>
+<p>Espara-se portanto que o algoritimo demonstrado seja capaz de apresentar ao usuário o segmento de maxima soma de qualquer que seja a lista submetida.</p>
 <h3>Processamento</h3>
 <p>Durante o deselvovimento do algoritimo apresentado nesse repositório, foi-se utilizado de três principais plataformas: i) Dev C++, ii) Visual Studio Code e iii) WSL:Ubunto</p>
 
