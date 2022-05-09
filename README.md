@@ -1,6 +1,6 @@
 # <b>AEDS: Funções com Lista</b>
 <h3>Problemática</h3>
-<p style="text-aling: center;">Em uma lista A temos um conjunto de elementos inteiros positivos ou não <a1, a2, . . . , an>. Elabore uma função que consiga encontrar
+<p style="text-aling: center;">Em uma lista A temos um conjunto de elementos inteiros positivos ou não \<a1, a2, . . . , an\>. Elabore uma função que consiga encontrar
 neste conjunto a máxima soma.
  </p>
 <h3>Solução</h3>
