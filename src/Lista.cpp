@@ -173,7 +173,7 @@ void Lista::searchMaximumSum(){
 	this->segmentMax.setSoma(0);
 	
 	do{
-		if(soma >=0){
+		if(soma >=0){ 
 			soma += auxFinal->getValue();
 		}
 		else{
