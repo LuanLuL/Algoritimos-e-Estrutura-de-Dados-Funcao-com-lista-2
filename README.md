@@ -1,11 +1,11 @@
 # <b>AEDS: Funções com Lista</b>
 <h3>Problemática</h3>
-<p style="text-aling: center;">Em uma lista A temos um conjunto de elementos inteiros positivos ou não [a1, a2, . . . , an\]. Elabore uma função que consiga encontrar
+<p style="text-aling: center;">Em uma lista A temos um conjunto de elementos inteiros positivos ou não [A1, A2, . . . , An]. Elabore uma função que consiga encontrar
 neste conjunto a máxima soma.
- </p>
+</p>
 <h3>Solução</h3>
 
-
+<P>O problema do segmento de soma máxima consiste em buscar de uma lista [0, ..., N] qualquer segmento [indexStart, ... indexFinal] — onde as variáveis "index" representam o começo e o fim do segmento — cuja a soma dos seus elementos seja maior ou igual que a soma de qualquer outro segmento da lista.</p>
 
 
 <h3>Processamento</h3>
