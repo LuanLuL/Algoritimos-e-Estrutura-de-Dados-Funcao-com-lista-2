@@ -39,13 +39,14 @@ do{
 		this->segmentMax.setStart(-1);
 		this->segmentMax.setFinal(-1);		
 	}
-	//(V)
+	//<b>(V)</b>
 	auxFinal = auxFinal->getProx();		
 	final++;
 }while(auxFinal != NULL);
 		</pre>
 	</code>
 </div><br>
+<br>
 <p></p>
 <h3>Processamento</h3>
 <p>Durante o deselvovimento do algoritimo apresentado nesse repositório, foi-se utilizado de três principais plataformas: i) Dev C++, ii) Visual Studio Code e iii) WSL:Ubunto</p>
