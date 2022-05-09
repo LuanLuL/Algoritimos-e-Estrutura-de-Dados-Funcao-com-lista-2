@@ -5,7 +5,7 @@ neste conjunto a máxima soma.
 </p>
 <h3>Solução</h3>
 
-<P>O problema do segmento de soma máxima consiste em encontrar de uma dada lista [0, ..., N] o segmento [indexStart, ..., indexFinal] cuja a soma dos seus elementos seja maior ou igual que a soma de qualquer outro segmento da lista, , onde as variáveis "index" representam o começo e o fim do segmento e ► < indexStart < indexFinal <= N.</p>
+<P>O problema do segmento de soma máxima consiste em encontrar de uma dada lista [0, ..., N] o segmento [indexStart, ..., indexFinal] cuja a soma dos seus elementos seja maior ou igual que a soma de qualquer outro segmento da lista, , onde as variáveis "index" representam o começo e o fim do segmento e Ø < indexStart < indexFinal ≤ N.</p>
 
 
 <h3>Processamento</h3>
