@@ -18,26 +18,29 @@ neste conjunto a máxima soma.
 	<code>
 		<pre>
 do{
-	if(soma >=0){		<b>(I)</b>
+	//<b>(I)</b>
+	if(soma >=0){		
 		soma += auxFinal->getValue();
 	}
-	else{		<b>(II)</b>
+	//<b>(II)</b>
+	else{		
 		soma = auxFinal->getValue();
 		start = final;
 	}
-
-	if(soma > this->segmentMax.getSoma()){		<b>(III)</b>
+	//<b>(III)</b>
+	if(soma > this->segmentMax.getSoma()){		
 		this->segmentMax.setSoma(soma);
 		this->segmentMax.setStart(start);
 		this->segmentMax.setFinal(final);
 	}
-	else if(soma < 0){		<b>(IV)</b>
+	//<b>(IV)</b>
+	else if(soma < 0){		
 		this->segmentMax.setSoma(0);
 		this->segmentMax.setStart(-1);
 		this->segmentMax.setFinal(-1);		
 	}
-
-	auxFinal = auxFinal->getProx();		(V)
+	//(V)
+	auxFinal = auxFinal->getProx();		
 	final++;
 }while(auxFinal != NULL);
 		</pre>
