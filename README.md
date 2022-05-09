@@ -10,10 +10,39 @@ neste conjunto a máxima soma.
 <img src=img/img1.png>
 <p>Observe nesse exemplo em que a máxima soma seria 13 e as posições para isso seriam de 0 até 2, considerando apenas os três primeiros elementos.</p>
 <p>Notem que esse problema só é interessante para uma lista que possuem tanto números negativos, quanto positivos. Caso contrario, para uma lista completamente positiva basta somar todos os seus elementos para se obter o segmento de soma máxima. Entretanto, se tratanto das listas inteiramente negativas, é importante ressaltar que o  segmento maximo apresentado deve ser maior ou igual a zero, pois o segmento vazio é sempre uma opção. Logo, o algoritiomo porposto considera  as listas que possuem somente valores negativos como um segmento vazio, porque o valor zero sempre será maior que qualquer segmento.</p>
-
 <p>Visto isso, para resolver a problemática é preciso imaginar as propriedades do segmento o qual buscamos encontrar. Primeiramente, é perceptivel que qualquer segmento terminado em indexStart - 1 deve ser possuir uma soma menor que zero, pois se não também seria considerado um elemento do segmento de soma máxima. E o mesmo vale para qualquer segmento começado em indexFinal + 1.</p>
 <img src=img/img2.png>
 <P>Além disso, da mesma forma que não há sentido o segmento de soma máximo ser precedido ou sucedido por um segmento de soma positiva — ja que tmbém seria incorporado no segmento — similarmente não tem explicação o seu prefixo (indexStar) ou seu sufico (indexFinal) possuírem valores menores que zero. Portanto os valores do segmento de soma máxima obviamente tem que resultar em uma soma maior que zero.</p>
+<p>Sabendo disso, podemos demonstrar essas ideias através do seguinte algoritimo:</p>
+<div>
+	<code>
+		<pre>
+do{
+	if(soma >=0){
+		soma += auxFinal->getValue();
+	}
+	else{
+		soma = auxFinal->getValue();
+		start = final;
+	}
+
+	if(soma > this->segmentMax.getSoma()){
+		this->segmentMax.setSoma(soma);
+		this->segmentMax.setStart(start);
+		this->segmentMax.setFinal(final);
+	}
+	else if(soma < 0){
+		this->segmentMax.setSoma(0);
+		this->segmentMax.setStart(-1);
+		this->segmentMax.setFinal(-1);		
+	}
+
+	auxFinal = auxFinal->getProx();
+	final++;
+}while(auxFinal != NULL);
+		</pre>
+	</code>
+</div><br>
 <h3>Processamento</h3>
 <p>Durante o deselvovimento do algoritimo apresentado nesse repositório, foi-se utilizado de três principais plataformas: i) Dev C++, ii) Visual Studio Code e iii) WSL:Ubunto</p>
 
