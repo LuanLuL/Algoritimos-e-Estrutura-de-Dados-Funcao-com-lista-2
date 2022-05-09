@@ -13,6 +13,7 @@ neste conjunto a máxima soma.
 
 <p>Visto isso, para resolver a problemática é preciso imaginar as propriedades do segmento o qual buscamos encontrar. Primeiramente, é perceptivel que qualquer segmento terminado em indexStart - 1 deve ser possuir uma soma menor que zero, pois se não também seria considerado um elemento do segmento de soma máxima. E o mesmo vale para qualquer segmento começado em indexFinal + 1.</p>
 <img src=img/img2.png>
+<P>Além disso, da mesma forma que não há sentido o segmento de soma máximo ser precedido ou sucedido por um segmento de soma positiva — ja que tmbém seria incorporado no segmento — similarmente não tem explicação o indexStart ou indexFinal possuírem valores menores que zero. Portanto os valores do segmento de soma máxima obviamente tem que resultar em uma soma maior que zero.</p>
 <h3>Processamento</h3>
 <p>Durante o deselvovimento do algoritimo apresentado nesse repositório, foi-se utilizado de três principais plataformas: i) Dev C++, ii) Visual Studio Code e iii) WSL:Ubunto</p>
 
