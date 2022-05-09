@@ -46,7 +46,7 @@ do{
 </div>
 <ol type="I">
 	<li>
-		<p>A Ideia é percorrer toda a lista utilizando as propriedades do segmento de soma máximo para comparar os valores, onde a variavel  começa em zero e na medida que a estrutura de repetição rodar, seu valor guarda a soma do ultimo segmento comparado. Logo, se a soma for maior ou igual a zero o algoritimo irá somar o valor do segmento anterior.</p>
+		<p>A Ideia é percorrer toda a lista utilizando as propriedades do segmento de soma máximo para comparar os valores, onde a variavel soma começa em zero e na medida que a estrutura de repetição rodar, seu valor guarda a soma do ultimo segmento comparado. Logo, se a soma for maior ou igual a zero o algoritimo irá somar o valor do segmento anterior.</p>
 	</li>
 	<li>
 		<p>Porém, caso o valor do segmento anterior não contribua com a soma máxima, ou seja, caso o ultimo segmento possua uma soma de valores resultante negativa, a soma anterior não é incorporada e sim alterada para o valor do elemento atual. Nessa caso, como o seguimento anterior foi descartado, é preciso modificar o indexStart para seu novo índice de início.</p>
