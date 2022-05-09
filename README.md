@@ -47,7 +47,23 @@ do{
 	</code>
 </div><br>
 <br>
-<p></p>
+<ol type="I">
+	<li>
+		<p></p>
+	</li>
+	<li>
+		<p</p>
+	</li>
+	<li>
+		<p></p>
+	</li>
+	<li>
+		<p></p>
+	</li>
+	<li>
+		<p></p>
+	</li>
+</ol>
 <h3>Processamento</h3>
 <p>Durante o deselvovimento do algoritimo apresentado nesse repositório, foi-se utilizado de três principais plataformas: i) Dev C++, ii) Visual Studio Code e iii) WSL:Ubunto</p>
 
