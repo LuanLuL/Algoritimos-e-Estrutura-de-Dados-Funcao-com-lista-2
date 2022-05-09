@@ -18,50 +18,41 @@ neste conjunto a máxima soma.
 	<code>
 		<pre>
 do{
-	//<b>(I)</b>
-	if(soma >=0){		
+	//<b>(i)</b>
+	if(soma >= 0){		
 		soma += auxFinal->getValue();
 	}
-	//<b>(II)</b>
+	//<b>(ii)</b>
 	else{		
 		soma = auxFinal->getValue();
 		start = final;
 	}
-	//<b>(III)</b>
+	//<b>(iii)</b>
 	if(soma > this->segmentMax.getSoma()){		
 		this->segmentMax.setSoma(soma);
 		this->segmentMax.setStart(start);
 		this->segmentMax.setFinal(final);
 	}
-	//<b>(IV)</b>
 	else if(soma < 0){		
 		this->segmentMax.setSoma(0);
 		this->segmentMax.setStart(-1);
 		this->segmentMax.setFinal(-1);		
 	}
-	//<b>(V)</b>
 	auxFinal = auxFinal->getProx();		
 	final++;
 }while(auxFinal != NULL);
 		</pre>
 	</code>
-</div><br>
-<br>
+</div>
 <ol type="I">
 	<li>
-		<p></p>
+		<p>A Ideia é percorrer toda a lista utilizando as propriedades do segmento de soma máximo para comparar os valores, onde a variavel  começa em zero e na medida que a estrutura de repetição rodar, seu valor guarda a soma do ultimo segmento comparado. Logo, se a soma for maior ou igual a zero o algoritimo irá somar o valor do segmento anterior.</p>
 	</li>
 	<li>
-		<p</p>
+		<p>Porém, caso o valor do segmento anterior não contribua com a soma máxima, ou seja, caso o ultimo segmento possua uma soma de valores resultante negativa, a soma anterior não é incorporada e sim alterada para o valor do elemento atual. Nessa caso, como o seguimento anterior foi descartado, é preciso modificar o indexStart para seu novo índice de início.</p>
 	</li>
 	<li>
-		<p></p>
-	</li>
-	<li>
-		<p></p>
-	</li>
-	<li>
-		<p></p>
+		<p>Assim sendo, após comparar os seguimentos é necessario atualizar o seguimento indicando os indíces de começo (variáveç start) e final (variável final) e a nova soma máxima obtida na repetição. Vale destacar novamente que se nenhum valor positivo for encontrado o algoritimo considera a soma como zero e indica parametros de inicio e fim do segmento com o índice de um negativo, isto significa um segmento vazio.</p>
 	</li>
 </ol>
 <h3>Processamento</h3>
