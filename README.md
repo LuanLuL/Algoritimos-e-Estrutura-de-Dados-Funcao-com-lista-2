@@ -7,8 +7,9 @@ neste conjunto a máxima soma.
 
 <P>O problema do segmento de soma máxima consiste em encontrar de uma dada lista [0, ..., N] o segmento [indexStart, ..., indexFinal] cuja a soma dos seus elementos seja maior ou igual que a soma de qualquer outro segmento da lista, onde as variáveis "index" representam o começo e o fim do segmento e Ø < indexStart < indexFinal ≤ N.</p>
 <p>Exemplo: </p>
-
 <img src=img/img1.png>
+<p>Observe nesse exemplo em que a máxima soma seria 13 e as posições para isso seriam de 0 até 2, saltando apenas a última.</p>
+<p>Notem que esse problema só é interessante para listas que possuem tanto números negativos, quanto positivos. Nesse sentido, para uma lista com valores totalmente positivos bastá eu somar seus valores para obter o segmento de soma máxima. Além disso, é importante ressaltar o algoritimo apresentado nesse repositório, desconsidera listas que nao possuem ao menos um elemento com valor positivo.</p>
 
 <h3>Processamento</h3>
 <p>Durante o deselvovimento do algoritimo apresentado nesse repositório, foi-se utilizado de três principais plataformas: i) Dev C++, ii) Visual Studio Code e iii) WSL:Ubunto</p>
