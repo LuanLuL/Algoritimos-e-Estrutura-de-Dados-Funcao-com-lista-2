@@ -9,7 +9,7 @@ neste conjunto a máxima soma.
 <p>Exemplo: </p>
 <img src=img/img1.png>
 <p>Observe nesse exemplo em que a máxima soma seria 13 e as posições para isso seriam de 0 até 2, saltando apenas a última.</p>
-<p>Notem que esse problema só é interessante para listas que possuem tanto números negativos, quanto positivos. Nesse sentido, para uma lista completamente positiva basta somar todos os seus elementos para se obter o segmento de soma máxima. Assim sendo, é importante ressaltar que o  segmento maximo apresentado deve ser maior ou igual a zero, pois o segmento vazio é sempre uma opção. Visto isso, se tratanto das listas inteiramente negativas, o algoritiomo porposto considera a lista como um segmento vazio, porque o valor zero sempre será maior que qualquer elemento.</p>
+<p>Notem que esse problema só é interessante para listas que possuem tanto números negativos, quanto positivos. Nesse sentido, para uma lista completamente positiva basta somar todos os seus elementos para se obter o segmento de soma máxima. Entretanto, se tratanto das listas inteiramente negativas, é importante ressaltar que o  segmento maximo apresentado deve ser maior ou igual a zero, pois o segmento vazio é sempre uma opção. Visto isso, o algoritiomo porposto considera listas que possuem somente valores negativos como um segmento vazio, porque o valor zero sempre será maior que qualquer elemento.</p>
 
 <p>Visto isso, para resolver a problemática é preciso imaginar as propriedades de um solução otima. Primeiramente</p>
 
