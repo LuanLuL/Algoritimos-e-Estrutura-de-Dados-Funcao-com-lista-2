@@ -57,16 +57,16 @@ void Lista::getMaxSegment(){
 	Item* aux = this->primeiro;
 	int i = 0;
 	
-	cout << "\nA m·xima soma encontrada foi: [ ";
+	cout << "\nA m√°xima soma encontrada foi: [ ";
 	
 	do{
 		if(i >= this->segmentMax.getStart()){
 			if(this->segmentMax.getSoma() == 0){
-				cout << "ÿ ] = " << this->segmentMax.getSoma();
+				cout << "√ò ] = " << this->segmentMax.getSoma() << "\n\n----->Segmento desconsiderado, pois todos os elementos possuem valores negativos!";
 				i = this->segmentMax.getFinal();
 			}
 			else if(i == this->segmentMax.getFinal()){
-				cout << aux->getValue() << " ] = " << this->segmentMax.getSoma();
+				cout << aux->getValue() << " ] = " << this->segmentMax.getSoma() << "\n\n----->Segmento se inicia no ind√≠ce " << this->segmentMax.getStart() << " e finaliza no ind√≠ce " << this->segmentMax.getFinal();
 			}
 			else{
 				cout << aux->getValue() << ", ";
@@ -109,7 +109,7 @@ void Lista::insertFinal(int value){
 	Item* newItem = new Item(value);
 	
 	if(getSize() >= this->maxSize){
-		cout << "\n\nERRO...ERRO...A lista " << this->name << " est· cheia...ERRO...ERRO\n\n";
+		cout << "\n\nERRO...ERRO...A lista " << this->name << " estÔøΩ cheia...ERRO...ERRO\n\n";
 	}
 	else{
 		if(checkEmpty()){
@@ -125,7 +125,7 @@ void Lista::insertFinal(int value){
 
 void Lista::printList(){
 	if(checkEmpty()){
-		cout << "\nA lista " << this->name << " est· vazia.";
+		cout << "\nA lista " << this->name << " est√° vazia.";
 	}
 	else{
 		Item* aux = this->primeiro;
@@ -196,5 +196,5 @@ void Lista::searchMaximumSum(){
 		final++;
 	}while(auxFinal != NULL);
 	
-	cout << "\n----->Soma m·xima calculada!\n\n------------------------------------------\n";
+	cout << "\n----->Soma m√°xima calculada!\n\n------------------------------------------\n";
 }
