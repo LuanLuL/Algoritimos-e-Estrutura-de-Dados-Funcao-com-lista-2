@@ -21,19 +21,19 @@ class Lista{
     	Lista(string name, int maxSize); //Create List empty
     	Lista(string name,  int maxSize, int value); //Create List starting one value
     	string getName();
-		void setName(string name);
-		int getMaxSize();
-		void setMaxSize(int maxSize);
-		Item* getPrimeiro();
-		void setPrimeiro(Item* primeiro);
-		Item* getUltimo();
-		void setUltimo(Item* ultimo);
-		void getMaxSegment();
-		void setMaxSegment(MaxSegment newMaxSegment);
-		bool checkEmpty();
-		int getSize();
-		void insertFinal(int value);
-		void printList();
+	void setName(string name);
+	int getMaxSize();
+	void setMaxSize(int maxSize);
+	Item* getPrimeiro();
+	void setPrimeiro(Item* primeiro);
+	Item* getUltimo();
+	void setUltimo(Item* ultimo);
+	void getMaxSegment();
+	void setMaxSegment(MaxSegment newMaxSegment);
+	bool checkEmpty();
+	int getSize();
+	void insertFinal(int value);
+	void printList();
     	void clearList();
     	void searchMaximumSum();
 };
